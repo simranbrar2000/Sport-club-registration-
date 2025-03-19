@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BVC Sport Club Event Registration</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #e9f5f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #004d7f;
+      text-align: center;
+      margin: 20px 0;
+      font-size: 36px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #004d7f;
+      color: #fff;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #002f57;
+    }
+
+    #confirmation-message {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #004d7f;
+      text-align: center;
+      padding: 10px;
+      background-color: #d6edf5;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>BVC Sport Club Event Registration</h1>
+  <form id="registration-form">
+    <label for="id">ID:</label>
+    <input type="number" id="id" name="id" required>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status" required>
+      <option value="student">Student</option>
+      <option value="staff">Staff</option>
+      <option value="volunteer">Volunteer</option>
+    </select>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <div id="confirmation-message"></div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
